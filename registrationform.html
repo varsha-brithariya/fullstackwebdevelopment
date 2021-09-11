@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
+    <div class="container">
+    <form action="" method="get">
         <h1>Payment form</h1>
+        <hr>
         <p>Required fields are allowed by *</p>
         <h2>Contact information</h2>
-        <p>Name:*<input type="text" name="name" id="name" required></p>
+        <p>Name:*<input type="text" name="name" id="name" required placeholder="varsha brithariya"></p>
         <fieldset>
             <legend>Gender</legend>
         <p>
@@ -35,10 +38,12 @@
         <p>Expiration date*<input type="date" name="exp_date" is="exp_date" required></p>
         <p>CVV:*<input type="password" name="cvv" id="cvv" required> </p>
         <input type="submit" value="pay now">
+   
 
 
         
     </form>
+</div>
     
 </body>
 </html>
