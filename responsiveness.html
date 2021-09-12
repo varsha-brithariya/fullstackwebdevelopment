@@ -1,24 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<img lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsiveness</title>
+    <title>practical 8</title>
     <style>
-        p{
-            font-size: 1em;
+        @media  screen and (min-width: 800px) {
+            .images{
+                flex:3;
+            }
+            
         }
-        @media screen and (width:600px){
-        body{
-            color: red;
+       
+        .images{
+            background-color: white;
+            font-size: 50px;
         }
-    }
+        .image1{
+            background-color: white;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            display: inline-flex;
+            border-radius: 50%;
+            margin: 30px;
+        }
+        @media screen and (min-width: 800px){
+            .square{
+                flex: 1;
+            }
+            
+        }
+        
+        
+        .square {
+            background-color: white;
+            font-size: 50px;
+
+        }
+        .smallsquare{
+           
+            display: inline-flex;
+            margin: 30px;
+
+        }
+        .square1{
+            background-color: white;
+            font-size:50px ;
+             
+
+        }
+        .smallsquare1{
+           
+           display: inline-flex;
+           margin: 30px;
+
+       }
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates commodi deserunt nobis laboriosam illo sint magni quod nostrum optio minima cumque expedita voluptatum magnam corporis repellat, sit quo praesentium eum tempora illum dignissimos incidunt consequatur officia? Hic quas vero vel voluptas sapiente quidem ad similique in veniam saepe unde velit eaque enim, esse animi ex maiores ratione facilis placeat earum provident tenetur! Voluptatibus qui magni modi earum, odio hic nemo illo consectetur, consequatur fuga ut? Accusantium dolorum eum aliquid sit ut consectetur, vel recusandae ducimus accusamus quas sapiente quia asperiores, laudantium expedita cupiditate velit ea? Ad quia nesciunt dolorem fugiat!
-    </p>
+    <h1 style="text-align: left;">Practical 8</h1>
+    <img src="book.jpg" alt="books" width="1200px" height="200px">
+    <h1 style="text-align: center;">Team Members</h1>
+    <div class=images>
+
+        <div class="image1">
+            <img src="female.png" style="border-radius: 50%; text-align: right; " >
+
+        </div>
+
+        <div class="image1">
+            <img src="female.png" style="border-radius: 50%; text-align: right; " >
+
+
+        </div>
+
+        <div class="image1">
+            <img src="female.png" style="border-radius: 50%; text-align: right; " >
+
+            
+
+        </div>
+
+        <div class="image1">
+            <img src="female.png" style="border-radius: 50%; text-align: right; " >
+
+
+        </div>
+        <h4 style="text-align: center;">About us</h4>
+        <div class= square>
+            <div class="smallsquare"><img src="img1.jpg" style="height: 500px; width: 500px;">
+    
+            </div>
+    
+            <div class="smallsquare"><img src="img2.jpg" style="height: 500px; width: 500px; ">
+    
+            </div>
+    
+            <div class="smallsquare"><img src="img3.jpg" style="height: 300px; width: 500px;">
+    
+            </div>
+    
+            
+            
+       </div>
+       <div class= square1>
+        <div class="smallsquare1"><img src="html.png" style="height: 500px; width: 300px;">
+
+        </div>
+
+        <div class="smallsquare1"><img src="js.png" style="height: 500px; width: 300px; ">
+
+        </div>
+
+        <div class="smallsquare1"><img src="jquery.png" style="height: 500px; width: 300px;">
+
+        </div>
+
+        
+        
+   </div>
+       </div>
+
+    
     
 </body>
 </html>
