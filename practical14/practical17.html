@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practical13.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      td {
+        width: 8rem;
+        border-right: 0.2rem solid white;
+      }
+      th {
+        color: darkblue;
+        font-size: 2rem;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        border-right: 0.2rem solid white;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+      }
+      .headerIcon {
+        width: 2rem;
+        height: 2rem;
+      }
+      .price {
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+        color: green;
+      }
+      .regularItem {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.5rem;
+      }
+      .remarkSign {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      .linkBtn {
+        display: block;
+        padding: 1rem;
+        color: white;
+        border-radius: 0.5rem;
+        background-color: rgb(70, 0, 128);
+        text-decoration: none;
+      }
+      .col1A {
+        background-color: rgb(219, 219, 179);
+      }
+      .col2A {
+        background-color: rgb(174, 199, 127);
+      }
+      .col3A {
+        background-color: rgb(172, 224, 194);
+      }
+      .col4A {
+        background-color: rgb(145, 177, 187);
+      }
+      .colB {
+        background-color: lightyellow;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    "
+  >
+    <table style="border-spacing: 0">
+      <colgroup>
+        <col style="width: 25%" />
+        <col style="width: 25%" />
+        <col style="width: 25%" />
+        <col style="width: 25%" />
+      </colgroup>
+      <caption style="font-size: 1.5rem; font-weight: bold; padding: 1rem">
+        SELECT YOUR PLAN
+      </caption>
+      <tr style="border-bottom: 2px solid gray">
+        <th class="col1A">
+          <div class="header">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="headerIcon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+              />
+            </svg>
+            <h5>Basic</h5>
+          </div>
+        </th>
+        <th class="col2A">
+          <div class="header">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="headerIcon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+              />
+            </svg>
+            <h5>Plus</h5>
+          </div>
+        </th>
+        <th class="col3A">
+          <div class="header">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="headerIcon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+              />
+            </svg>
+            <h5>Delux</h5>
+          </div>
+        </th>
+        <th class="col4A">
+          <div class="header">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="headerIcon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+              />
+            </svg>
+            <h5>Pro</h5>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <td class="price colB">Rs. 500/-</td>
+        <td class="price colB">Rs. 1500/-</td>
+        <td class="price colB">Rs. 2500/-</td>
+        <td class="price colB">Rs. 3500/-</td>
+      </tr>
+      <tr>
+        <td class="regularItem col1A">50 pages</td>
+        <td class="regularItem col2A">75 pages</td>
+        <td class="regularItem col3A">Unlimited</td>
+        <td class="regularItem col4A">Unlimited</td>
+      </tr>
+      <tr>
+        <td class="regularItem colB">3 Users</td>
+        <td class="regularItem colB">5 Users</td>
+        <td class="regularItem colB">10 Users</td>
+        <td class="regularItem colB">Unlimited</td>
+      </tr>
+      <tr>
+        <td class="regularItem col1A">10 Sites</td>
+        <td class="regularItem col2A">25 Sites</td>
+        <td class="regularItem col3A">100 Sites</td>
+        <td class="regularItem col4A">Unlimited</td>
+      </tr>
+      <tr>
+        <td class="regularItem colB">50 MB</td>
+        <td class="regularItem colB">250 MB</td>
+        <td class="regularItem colB">1 GB</td>
+        <td class="regularItem colB">5 GB</td>
+      </tr>
+      <tr>
+        <td class="regularItem col1A">included</td>
+        <td class="regularItem col2A">included</td>
+        <td class="regularItem col3A">included</td>
+        <td class="regularItem col4A">included</td>
+      </tr>
+      <tr>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td class="regularItem col1A">
+          <img
+            class="remarkSign"
+            src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/close-256.png"
+          />
+        </td>
+
+        <td class="regularItem col2A">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+        <td class="regularItem col3A">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+        <td class="regularItem col4A">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/close-256.png"
+          />
+        </td>
+
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td class="regularItem col1A">
+          <img
+            class="remarkSign"
+            src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/close-256.png"
+          />
+        </td>
+        <td class="regularItem col2A">
+          <img
+            class="remarkSign"
+            src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/close-256.png"
+          />
+        </td>
+        <td class="regularItem col3A">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+        <td class="regularItem col4A">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/close-256.png"
+          />
+        </td>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/close-256.png"
+          />
+        </td>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/close-256.png"
+          />
+        </td>
+        <td class="regularItem colB">
+          <img
+            class="remarkSign"
+            src="https://cdn0.iconfinder.com/data/icons/3d-items-vol-2/256/tick_checkmark.png"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td class="regularItem col1A">
+          <a class="linkBtn" href="#">Sign Up</a>
+        </td>
+        <td class="regularItem col2A">
+          <a class="linkBtn" href="#">Sign Up</a>
+        </td>
+        <td class="regularItem col3A">
+          <a class="linkBtn" href="#">Sign Up</a>
+        </td>
+        <td class="regularItem col4A">
+          <a class="linkBtn" href="#">Sign Up</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
